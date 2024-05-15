@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-      <!--Meta elements inspired by Coders Coffeehouse and Love Math-->
+    <!--Meta elements inspired by Coders Coffeehouse and Love Math-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cute Dog Luna, a spirited Dog who wants to meet you.">
@@ -11,14 +12,29 @@
     <!--CSS Stylesheet-->
     <link href="assets/css/styles.css" rel="stylesheet">
 </head>
+
 <body>
     <h1>Welcome to "The (nearly) endless Text-Adventure!"</h1>
-<main>
-    <h2>What's your Name Adventurer?</h2>
-
-    <div>
-        <p>Username:</p>
-    </div>
-</main>
+    <main>
+        <div>
+            <form action="https://formdump.codeinstitute.net/" method="post">
+                <div>
+                    <fieldset>
+                        <legend>What's your Name Adventurer</legend>
+                        <div>
+                            <label for="username" class="bold">Username:</label>
+                            <input type="text" name="username" id="username" aria-label="Enter Your Username" required>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <button type="submit">
+                            <strong>Start Your Journey!</strong>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
 </body>
+
 </html>
