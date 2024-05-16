@@ -1,4 +1,8 @@
 body {
-    background-color: slategrey;
-    color: rgba(6, 53, 0, 0.986);
+    background-color: #ABA9BB;
+    color: #020735;
+}
+
+.username-input-display{
+    background-color: #777586;
 }
