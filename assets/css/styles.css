@@ -14,36 +14,6 @@ body {
     padding: 5px;
 
 }
-/* Theme Page Rules*/
-
-.theme-cyberpunk-button{
-    width: 150px;
-    height: 130px;
-    background-color: yellow;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.theme-fantasy-button{
-    width: 150px;
-    height: 130px;
-    background-color: brown;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.theme-scifi-button{
-    width: 150px;
-    height: 130px;
-    background-color: midnightblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color:aliceblue;
-}
 
 /*Game Page Rules*/
 
