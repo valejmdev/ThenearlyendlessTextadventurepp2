@@ -6,3 +6,9 @@ body {
 .username-input-display{
     background-color: #777586;
 }
+
+#start-box-div{
+    background-color:aliceblue;
+    border: 1px solid black;
+    padding: 5px;
+}
