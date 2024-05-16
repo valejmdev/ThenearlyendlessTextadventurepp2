@@ -44,3 +44,12 @@ body {
     align-items: center;
     color:aliceblue;
 }
+
+/*Game Page Rules*/
+
+.option-align {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-top: 25px;
+    gap: 20px;
+}

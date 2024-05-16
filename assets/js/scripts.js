@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
         usernameSpan.textContent = storedUsername;
     }
 
-    // Theme Page
+    // Theme Selector Page
     const themeForm = document.getElementById('theme-selector-form');
     if (themeForm) {
         themeForm.addEventListener('submit', function (event) {
