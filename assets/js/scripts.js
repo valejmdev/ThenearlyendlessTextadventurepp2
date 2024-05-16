@@ -1,3 +1,4 @@
+//Page Load Function pasting username in H1
 document.addEventListener('DOMContentLoaded', function() {
     if (document.title !== 'The nearly endless Text-Adventure Login'){
         const usernameSpan = document.getElementById('headline-username'); 

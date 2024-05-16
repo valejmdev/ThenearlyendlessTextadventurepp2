@@ -2,13 +2,19 @@
 <html lang="en">
 
 <head>
+    <!--Meta elements inspired by Coders Coffeehouse and Love Math-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cute Dog Luna, a spirited Dog who wants to meet you.">
+    <meta name="keywords" content="Text-Adventure, endless, game, cyberpunk, fantasy, sci-fi">
+    <!--Title-->
     <title>The nearly endless Text-Adventure Theme selector</title>
+    <!--CSS Stylesheet-->
+    <link href="assets/css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Welcome <span id="headline-username"></span></h1>
+    <h1>Welcome <span id="headline-username"></span>!</h1>
     <section class="theme-display-page">
         <div class="introduction-text">
             <p>Placeholder for the Theme display Text - Containing Instructions and Rules
@@ -24,19 +30,32 @@
             </p>
         </div>
         <div class="theme-allign">
-            <div class="theme-cyberpunk-button">
-                <p>Cyberpunk</p>
+            <form action="game.html" method="get" id="theme-selector-form"></form>
+            <div>
+                <input type="radio" name="theme-selection" id="cyberpunk" aria-label="Choose the Cyberpunk Theme"
+                    value="Cyberpunk">
+                <label for="theme-selection" class="theme-cyberpunk-button">Cyberpunk</label>
             </div>
-            <div class="theme-fantasy-button">
-                <p>Medival Fantasy</p>
+            <div>
+                <input type="radio" name="theme-selection" id="medival-fantasy"
+                    aria-label="Choose the Medival Fantasy Theme" value="Medival-Fantasy">
+                <label for="theme-selection" class="theme-fantasy-button">Medival Fantasy</label>
             </div>
-            <div class="theme-scifi-button">
-                <p>Sci-Fi</p>
+            <div>
+                <input type="radio" name="theme-selection" id="sci-fi" aria-label="Choose the Sci-Fi Theme"
+                    value="Sci-Fi">
+                <label for="theme-selection" class="theme-scifi-button">Sci-Fi</label>
+            </div>
+            <div>
+                <button type="submit">
+                    <strong>Start Your Journey!</strong>
+                </button>
             </div>
         </div>
     </section>
 
-    
+    <!--JavaScript -->
+    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>
