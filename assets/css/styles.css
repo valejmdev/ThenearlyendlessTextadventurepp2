@@ -15,12 +15,6 @@ body {
 
 }
 /* Theme Page Rules*/
-.theme-allign{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
 .theme-cyberpunk-button{
     width: 150px;
