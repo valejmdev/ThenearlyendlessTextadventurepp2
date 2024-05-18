@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Page Load Function pasting username in H1
-        const usernameSpan = document.getElementById('headline-username');
-        const storedUsername = sessionStorage.getItem('username');
-        usernameSpan.textContent = storedUsername;
-        
+    const usernameSpan = document.getElementById('headline-username');
+    const storedUsername = sessionStorage.getItem('username');
+    usernameSpan.textContent = storedUsername;
+
     // Theme Selector Page
     const themeForm = document.getElementById('theme-selector-form');
     if (themeForm) {
@@ -18,9 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
             updateStory();
         });
     }
+    //Theme display on game page
     const themeSpan = document.getElementById('headline-theme');
     const storedTheme = sessionStorage.getItem('theme');
     themeSpan.textContent = storedTheme;
 });
-
-

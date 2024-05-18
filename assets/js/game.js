@@ -280,6 +280,7 @@ document.addEventListener('DOMContentLoaded', function () {
     currentStoryId = parseInt(sessionStorage.getItem('currentStoryId')) || 1;
     updateStory(currentStoryId);
 
+    //function to update the storyId
     function updateStory(storyId) {
         const story = gameStorySelection.find(story => story.id === storyId);
         if (!story) {
