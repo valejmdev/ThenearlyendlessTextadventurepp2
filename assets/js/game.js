@@ -67,8 +67,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // function for API of groq.com's llama3 AI Model that writes the story 
     async function apiCall(username, theme, history, lastChoice, requestHappyEnding) {
 
-        //API Key is empty on purpose on commit and push for now, as safe storage has to be discussed
-        const apiKey = '';
+        //API Key is temporary on purpose, as safe storage has to be discussed
+        const apiKey = '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';
         let prompt;
         let systemMessage;
 
