@@ -1,112 +1,148 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The (nearly) endless Textadventure
 
-Welcome,
+Welcome to my Textadventure Website on which you will find a (nearly) never ending Story. It invites you to enter a username and choose one of three themes: Cyberpunk, Medieval Fantasy and Sci-Fi. But this is no ordinary Textadventure, as it uses an AI (Model - Llama 3 8b-8192) to give you an individual story as soon as you start the game. And as soon as you reach the end, you can easily restart the game with one click on a button.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This website has been created as the second Portfolio project for Code Institute's Full Stack Software Development Diploma. It was built using HTML, CSS and JavaScript. The Groq AI API is being used to narrate the story and give the user new options, aswell as a happy End. GitPod was used for writing the code for this website, as well as committing and pushing to GitHub. GitHub was then used to store the project after it had been pushed from GitPod. Once all the code had been written, GitPages was then used to deploy the website.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **April 26, 2024**
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## The (nearly) endless Textadventure
 
-`python3 -m http.server`
+![I Am Responsive]()
+### View the live website [here](https://valejmdev.github.io/ThenearlyendlessTextadventurepp2/)
+***
+## Table of content: 
+ 1. [UX](#UX)
+    1. [User Stories](#User-Stories)
+    1. [Wireframes](#Wireframes)
+    1. [Color](#Color)
+    1. [Font](#Font)
+    1. [Images](#Images)
+ 1. [Features](#Features)
+    1. [General](#General)
+    1. [Home page](#Home-page)
+    1. [Gallery](#Gallery)
+    1. [Contact](#Contact)
+ 1. [Testing](#Testing)
+	1. [General Testing](assets/docs/readmepages/TESTING.md)
+	2. [Mobile Testing](assets/docs/readmepages/TESTING.md)
+	3. [Desktop Testing](assets/docs/readmepages/TESTING.md)
+	4. [Functionality](assets/docs/readmepages/TESTING.md)
+ 	5. [Website Development Issues](assets/docs/readmepages/TESTING.md)
+ 	6. [Bugs](assets/docs/readmepages/TESTING.md)
+ 	7. [Technologies Used](assets/docs/readmepages/TESTING.md)
+ 	8. [Validation](assets/docs/readmepages/TESTING.md)
+	9. [W3C HTML](assets/docs/readmepages/TESTING.md)
+	10. [W3C Jigsaw](assets/docs/readmepages/TESTING.md)
+ 	11. [Accessibility](assets/docs/readmepages/TESTING.md)
+ 	12. [Deployment](assets/docs/readmepages/TESTING.md)
+ 1. [Credits](#Credits)
+      1. [Content](#Content)
+      2. [Media](#Media)
+      3. [Code](#Code)
+ 5. [Acknowledgements](#Acknowledgements)
+***
+## UX: 
 
-A blue button should appear to click: _Make Public_,
+### User Stories: 
+#### Persona:
 
-Another blue button should appear to click: _Open Browser_.
+***
+#### Detailed User Journey
+##### Username Page:
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+1.  ****:
+   
+2.  ****:
+   
+3.  ****:
 
-A blue button should appear to click: _Make Public_,
+4.  ****:
 
-Another blue button should appear to click: _Open Browser_.
+      
+***
+####  Theme Selector:
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+1.  ****:
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+***
+#### Game Page
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+1.  ****:
+  
+2.  ****:
+#### End Game Page
 
-------
+1.  ****:
+  
+2.  ****:
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+***
 
-**April 26 2024:** Update node version to 16
+### Wireframes: 
+- I created my Wireframes in preparation for the project with Balsamiq.
+- While creating the website you can see today, i had to change some elements for design and time reasons.
+- To see all my Wireframes:
 
-**September 20 2023:** Update Python version to 3.9.17.
+**Elements you might find missing from the live Website:**
+Here is an example from my Index page:
+![Wireframe Desktop Index]()
+![Wireframe Mobile Index]()
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- To see all Wireframes, click [here](assets/docs/readmepages/WIREFRAMES.md)
+***
+### Color: 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+***
+### Font: 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+***
+### Images: 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+***
+## Features: 
+### General: 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Username Page:
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Game Page:
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Engame Page: 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Missing Features
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+## Testing
+**Due to the length of my Testing Section, i have created an extra Page**
 
-## FAQ about the uptime script
+[Click Here](assets/docs/readmepages/TESTING.md)
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Credits 
+### Content: 
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Media: 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Code: 
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Acknowledgements: 
+- A very special thanks to Pascal the most helpful person i ever met.  He has helped me tremendously with ideas, fixes and feedback.
 
-**Can I opt out?**
+- I also want to thank my Mentor Rory-Patrick who gave me so many tips and tricks, and inspired me along the way.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+- Also very special thanks to my dog who provided emotional support and times to unwind.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+- I thank all my peers in my course, who provided a lot of support and feedback!
 
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- I thank all my family members and friends who not only gave feedback and support but also tested it on their devices.
+> Written with [StackEdit](https://stackedit.io/).
