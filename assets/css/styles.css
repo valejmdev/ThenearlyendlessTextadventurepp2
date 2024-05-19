@@ -95,8 +95,16 @@ legend {
 }
 .introduction-text {
     background-color: #ABA9BB;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
-
+.rules-box{
+    width: 315px;
+    padding: 5px;
+}
 
 
 /*Game Page Rules*/
