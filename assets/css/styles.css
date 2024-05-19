@@ -108,12 +108,22 @@ legend {
 
 
 /*Game Page Rules*/
-
+.game-display-page {
+    display: flex;
+}
+.side-bar {
+    display: none;
+}
+.game-text-button-align{
+    padding-right: 10px;
+}
 .option-align {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    margin-top: 25px;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.option-button{
+    margin: 30px 10px 0 10px;
+    height: 50px;
 }
 
 /*Footer Rules*/
@@ -160,6 +170,19 @@ The following Style Rules give the content more space and realigns it to be more
         padding: 0;
     }
 
+    .side-bar{
+        display: flex;
+        flex-direction: column;
+        width: 180px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .option-align {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        margin-top: 25px;
+        gap: 20px;
+    }
 }
 
 /*This is a media query that targets larger device screen sizes (laptop and desktop) 
