@@ -8,11 +8,11 @@
  	6. [Bugs](#Bugs)
  	7. [Technologies Used](#Technologies-Used)
  	8. [Validation](#Validation)
-	9. [W3C HTML](#W3C-HTML)
-	10. [W3C Jigsaw](#W3C-Jigsaw)
-    11. [JavaScript](#JavaScript)
- 	12. [Accessibility](#Accessibility)
- 	13. [Deployment](#Deployment)
+        1. [W3C HTML](#W3C-HTML)
+        2. [W3C Jigsaw](#W3C-Jigsaw)
+        3. [JavaScript](#JavaScript)
+ 	9. [Accessibility](#Accessibility)
+ 	10. [Deployment](#Deployment)
 ***
 ### General Testing
 -   Each feature was developed on the main branch. 
