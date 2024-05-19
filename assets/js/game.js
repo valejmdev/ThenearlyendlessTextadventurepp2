@@ -386,14 +386,31 @@ const username = sessionStorage.getItem('username');
     }
 
 // function for API of groq.com's llama3 AI Model that writes the story 
-async function apiCall(username, theme, history, lastChoice) {
+async function apiCall(username, theme, history, lastChoice, requestHappyEnding) {
 
     //API Key is empty on purpose on commit and push for now, as safe storage has to be discussed
     const apiKey = '';
     let prompt;
     let systemMessage;
 
-    //Prompt for this textadventure, that takes username, theme, last choice and history of the story to create a full expierience
+    //On part 7 the requestHappyEnding is triggered, creating a longer more defined prompt to end the story, without any more options
+    if (requestHappyEnding) {
+        prompt = `Theme: ${theme}
+    Username: ${username}
+    The last user input was: ${lastChoice}`;
+        systemMessage = `You are a writer for a text-based adventure game. Please conclude the story with a happy ending, considering the following history and user inputs. The conclusion should be more than 1000 characters.
+    Answer in this Format (json):
+    """
+    {
+        "story": "(happy ending of the story, max 2000 characters)",
+        "options": {}
+    }
+    """ 
+    What happened before: ${history}`;
+    } 
+    //Prompt for the textadventure, that takes username, theme, last choice and history of the story to create a full expierience
+    else {
+    
     prompt = 
         `Theme: ${theme}
         Username: ${username}
@@ -412,7 +429,7 @@ async function apiCall(username, theme, history, lastChoice) {
         }
     """ 
     What happened before: ${history}`;
-    
+}
     //fetch method of the response the AI gives, that gives the response in a JSON Format 
     const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
         method: 'POST',
@@ -433,7 +450,7 @@ async function apiCall(username, theme, history, lastChoice) {
             stop: null
         })
     });
-    
+
     //response check for error handling, if there is no value
     if (response.ok) {
         const data = await response.json();
