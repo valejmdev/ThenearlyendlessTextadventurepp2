@@ -112,10 +112,10 @@ I used the [W3C HTML Validator](https://validator.w3.org/nu/)
 
 | Pages    | Screenshot                                    |
 |----------|-----------------------------------------------|
-| Username     | ![W3C HTML Validation Index]() |
-| Theme  | ![W3C HTML Validation Theme]() |
-| Game  | ![W3C HTML Validation Game]() |
-| Engame 	   | ![W3C HTML Validation Endgame]() |
+| Username     | ![W3C HTML Validation Index](../readmescreenshots/) |
+| Theme  | ![W3C HTML Validation Theme](../readmescreenshots/) |
+| Game  | ![W3C HTML Validation Game](../readmescreenshots/) |
+| Engame 	   | ![W3C HTML Validation Endgame](../readmescreenshots/) |
 
 ### W3C Jigsaw: 
 I used the [W3C CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
@@ -129,22 +129,22 @@ I used the []()
 I used the Chrome Lighthouse tool and received different scores for different pages and devices.
 | Environment         | Page   | Screenshot                                    |
 |---------------------|--------|-----------------------------------------------|
-| Local Host Mobile   | Username   | ![Local Host Mobile Username]()     |
-| Local Host Mobile   | Theme| ![Local Host Mobile Theme]() |
-| Local Host Mobile   | Game| ![Local Host Mobile Game]() |
-| Local Host Mobile   | Endgame| ![Local Host Mobile Endgame]() |
-| Local Host Desktop  | Username   | ![Local Host Desktop Username]()     |
-| Local Host Desktop  | Theme| ![Local Host Desktop Theme]() |
-| Local Host Desktop  | Game| ![Local Host Desktop Game]() |
-| Local Host Desktop  | Endgame| ![Local Host Desktop Endgame]() |
-| Github Pages Mobile | Username   | ![Github Pages Mobile Username]() |
-| Github Pages Mobile | Theme| ![Github Pages Mobile Theme]() |
-| Github Pages Mobile | Game| ![Github Pages Mobile Game]() |
-| Github Pages Mobile | Endgame| ![Github Pages Mobile Endgame]() |
-| Github Pages Desktop| Username   | ![Github Pages Desktop Username]() |
-| Github Pages Desktop| Theme| ![Github Pages Desktop Theme]() |
-| Github Pages Desktop| Game| ![Github Pages Desktop Game]() |
-| Github Pages Desktop| Endgame| ![Github Pages Desktop Endgame]() |
+| Local Host Mobile   | Username   | ![Local Host Mobile Username](../readmescreenshots/)     |
+| Local Host Mobile   | Theme| ![Local Host Mobile Theme](../readmescreenshots/) |
+| Local Host Mobile   | Game| ![Local Host Mobile Game](../readmescreenshots/) |
+| Local Host Mobile   | Endgame| ![Local Host Mobile Endgame](../readmescreenshots/) |
+| Local Host Desktop  | Username   | ![Local Host Desktop Username](../readmescreenshots/)     |
+| Local Host Desktop  | Theme| ![Local Host Desktop Theme](../readmescreenshots/) |
+| Local Host Desktop  | Game| ![Local Host Desktop Game](../readmescreenshots/) |
+| Local Host Desktop  | Endgame| ![Local Host Desktop Endgame](../readmescreenshots/) |
+| Github Pages Mobile | Username   | ![Github Pages Mobile Username](../readmescreenshots/) |
+| Github Pages Mobile | Theme| ![Github Pages Mobile Theme](../readmescreenshots/) |
+| Github Pages Mobile | Game| ![Github Pages Mobile Game](../readmescreenshots/) |
+| Github Pages Mobile | Endgame| ![Github Pages Mobile Endgame](../readmescreenshots/) |
+| Github Pages Desktop| Username   | ![Github Pages Desktop Username](../readmescreenshots/) |
+| Github Pages Desktop| Theme| ![Github Pages Desktop Theme](../readmescreenshots/) |
+| Github Pages Desktop| Game| ![Github Pages Desktop Game](../readmescreenshots/) |
+| Github Pages Desktop| Endgame| ![Github Pages Desktop Endgame](../readmescreenshots/) |
 
 ## Deployment: 
 This project was developed using [GitPod](https://gitpod.io/) and [VSCode](https://code.visualstudio.com), committed and pushed to [GitHub](https://github.com/) using a GitPod terminal.
