@@ -18,8 +18,4 @@ document.addEventListener('DOMContentLoaded', function () {
             updateStory();
         });
     }
-    //Theme display on game page
-    const themeSpan = document.getElementById('headline-theme');
-    const storedTheme = sessionStorage.getItem('theme');
-    themeSpan.textContent = storedTheme;
 });
