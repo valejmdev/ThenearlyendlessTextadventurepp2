@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     usernameSpan.textContent = storedUsername;
 
     //Gametext variable
-    const gameStorySelection = [{
+    /*const gameStorySelection = [{
             id: 1,
             text: 'You find yourself standing at the entrance of an enchanted forest. The path splits into four directions. Which way do you choose?',
             options: [{
@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
 
         },
-    ]
+    ]*/
     // Initialize the game with the first story or from sessionStorage
     currentStoryId = parseInt(sessionStorage.getItem('currentStoryId')) || 1;
     updateStory(currentStoryId);
@@ -330,3 +330,50 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 });
+
+// function for API of groq.com's llama3 AI Model that writes the story 
+async function apiCall(username, theme, history, lastChoice) {
+    //API Key is empty on purpose on commit and push for now, as safe storage has to be discussed
+    const apiKey = '';
+    let prompt;
+    let systemMessage;
+    //Prompt for this textadventure, that takes username, theme, last choice and history of the story to create a full expierience
+    prompt = 
+        `Theme: ${theme}
+        Username: ${username}
+        The last user input was: ${lastChoice}`;
+    systemMessage = `You are a writer for a text-based adventure game. You write a story while paying attention to the last user input, theme, and name!
+        Answer in this Format (json):
+        """
+        {
+        "story": "(short part of the story, max 400 characters)",
+        "options": {
+            "1": "(max 4 words to continue the story)",
+            "2": "(max 4 words to continue the story)",
+            "3": "(max 4 words to continue the story)",
+            "4": "(max 4 words to continue the story)"
+            }
+        }
+    """ 
+    What happened before: ${history}`;
+    }
+    //fetch method of the response the AI gives, that gives the response in a JSON Format 
+    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${apiKey}`
+        },
+        body: JSON.stringify({
+            messages: [
+                { role: 'system', content: systemMessage },
+                { role: 'user', content: prompt }
+            ],
+            model: 'llama3-8b-8192',
+            temperature: 1,
+            max_tokens: requestHappyEnding ? 4096 : 1024,
+            top_p: 1,
+            stream: false,
+            stop: null
+        })
+    });
