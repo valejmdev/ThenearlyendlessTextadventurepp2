@@ -286,6 +286,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         },
     ]*/
+    /*
     // Initialize the game with the first story or from sessionStorage
     currentStoryId = parseInt(sessionStorage.getItem('currentStoryId')) || 1;
     updateStory(currentStoryId);
@@ -329,14 +330,69 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-});
+
+*/
+//variables to use in the function that updates the story
+const username = sessionStorage.getItem('username');
+    const theme = sessionStorage.getItem('theme');
+    let history = "Start of the adventure";
+    let currentPart = 0;
+
+    //Function that updates the story
+    async function updateStory(choice) {
+        try {
+            const result = await apiCall(username, theme, history, choice, currentPart >= 6);
+            const story = result.story;
+            const options = result.options;
+
+            //Counting the Part of the story
+            history = history + " " + choice;
+            currentPart = currentPart + 1;
+
+            //if statement, checking if part 7 is reached, then redirecting to the endgame page storing the text the ai created in session storage.
+            if (currentPart >= 7) {
+                sessionStorage.setItem('endgameText', story);
+                window.location.href = 'endgame.html';
+                return;
+            }
+
+            //pasting the Text into the game text div
+            const gameTextDiv = document.getElementById('game-text');
+            gameTextDiv.innerHTML = story;
+
+            //Updating the Text in the buttons for the text adventure 
+            const optionButtons = document.querySelectorAll('.option-button');
+            let optionIndex = 0;
+            for (const key in options) {
+                if (options.hasOwnProperty(key)) {
+                    optionButtons[optionIndex].style.display = 'inline-block';
+                    optionButtons[optionIndex].innerHTML = options[key];
+                    optionButtons[optionIndex].onclick = function () {
+                        updateStory(options[key]);
+                    };
+                    optionIndex = optionIndex + 1;
+                }
+            }
+
+            //Check for empty buttons and hiding them
+            for (let i = optionIndex; i < optionButtons.length; i++) {
+                optionButtons[i].style.display = 'none';
+            }
+
+            //Error handling if the story can't be updated
+        } catch (error) {
+            console.log('Error fetching story:', error);
+        }
+    }
 
 // function for API of groq.com's llama3 AI Model that writes the story 
 async function apiCall(username, theme, history, lastChoice) {
+
     //API Key is empty on purpose on commit and push for now, as safe storage has to be discussed
     const apiKey = '';
     let prompt;
     let systemMessage;
+
     //Prompt for this textadventure, that takes username, theme, last choice and history of the story to create a full expierience
     prompt = 
         `Theme: ${theme}
@@ -356,7 +412,7 @@ async function apiCall(username, theme, history, lastChoice) {
         }
     """ 
     What happened before: ${history}`;
-    }
+    
     //fetch method of the response the AI gives, that gives the response in a JSON Format 
     const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
         method: 'POST',
@@ -377,3 +433,15 @@ async function apiCall(username, theme, history, lastChoice) {
             stop: null
         })
     });
+    
+    //response check for error handling, if there is no value
+    if (response.ok) {
+        const data = await response.json();
+        return JSON.parse(data.choices[0].message?.content);
+    } else {
+        const errorData = await response.json();
+        console.log('Error:', errorData);
+    }
+
+}
+});
