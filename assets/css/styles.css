@@ -91,8 +91,6 @@ legend {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url("../images/book-background.jpg") no-repeat center center / cover;
-    height: 70vh;
 }
 
 .introduction-text {
@@ -175,6 +173,7 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: #777586;
+    margin-top: 50px;
 }
 
 footer p {
@@ -226,6 +225,14 @@ The following Style Rules give the content more space and realigns it to be more
         margin-top: 25px;
         gap: 20px;
     }
+    .theme-allign {
+        display:flex;
+        justify-content: center;
+        background: url("../images/book-background.jpg") no-repeat center center / cover;
+        width: 100%;
+        height: auto;
+    }
+    
 }
 
 /*This is a media query that targets larger device screen sizes (laptop and desktop) 
