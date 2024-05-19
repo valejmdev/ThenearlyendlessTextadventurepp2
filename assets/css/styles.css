@@ -1,4 +1,4 @@
-/*General Rules*/
+/*General style Rules*/
 body {
     background-color: #ABA9BB;
     color: #020735;
@@ -7,7 +7,7 @@ body {
     min-height: 100vh;
 }
 
-/*Header Rules*/
+/*Header style Rules*/
 header {
     min-height: 50px;
     background-color: #777586;
@@ -40,7 +40,7 @@ header {
     text-align: center;
 }
 
-/*Index Page Rules*/
+/*Index Page style Rules*/
 .username-display-page {
     display: flex;
     flex-direction: column;
@@ -80,12 +80,13 @@ legend {
     align-items: center;
 }
 
-/*Theme Selector Page*/
+/*Theme Selector Page style Rules*/
 .greet-user{
     text-align: center;
     font-size: x-large;
     font-weight: bold;
 }
+
 .theme-display-page {
     display: flex;
     flex-direction: column;
@@ -93,6 +94,7 @@ legend {
     background: url("../images/book-background.jpg") no-repeat center center / cover;
     height: 70vh;
 }
+
 .introduction-text {
     background-color: #ABA9BB;
     display: flex;
@@ -101,32 +103,71 @@ legend {
     justify-content: space-evenly;
     align-items: flex-start;
 }
+
 .rules-box{
     width: 315px;
     padding: 5px;
 }
 
 
-/*Game Page Rules*/
+/*Game Page style Rules*/
 .game-display-page {
     display: flex;
+    flex-direction: column;
 }
+
 .side-bar {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
 .game-text-button-align{
     padding-right: 10px;
 }
+
 .option-align {
     display: flex;
     flex-direction: column;
 }
+
 .option-button{
     margin: 30px 10px 0 10px;
     height: 50px;
 }
 
-/*Footer Rules*/
+#game-text{
+    margin: 15px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+/*Endgame page style Rules*/
+.thank-display-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-conclusion-text-align{
+    margin: 15px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.thank-text-align{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+#start-new-button{
+    margin: 30px 10px 0 10px;
+    height: 50px;
+}
+
+/*Footer style Rules*/
 footer {
     display: flex;
     justify-content: space-evenly;
@@ -170,6 +211,10 @@ The following Style Rules give the content more space and realigns it to be more
         padding: 0;
     }
 
+    .game-display-page {
+        display: flex;
+        flex-direction: row;
+    }
     .side-bar{
         display: flex;
         flex-direction: column;
