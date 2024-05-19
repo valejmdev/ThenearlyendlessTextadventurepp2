@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
+    //Theme display in sidebar
+    const themeSpan = document.getElementById('headline-theme');
+    const storedTheme = sessionStorage.getItem('theme');
+    themeSpan.textContent = storedTheme;
+
+    // Page Load Function pasting username in sidebar
+    const usernameSpan = document.getElementById('headline-username');
+    const storedUsername = sessionStorage.getItem('username');
+    usernameSpan.textContent = storedUsername;
+
     //Gametext variable
     const gameStorySelection = [{
             id: 1,
