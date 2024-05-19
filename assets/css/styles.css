@@ -2,22 +2,36 @@
 body {
     background-color: #ABA9BB;
     color: #020735;
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
 }
 /*Header Rules*/
+header{
+    min-height: 50px;
+    background-color: #777586;
+}
+
+.hero-container-align{
+    display: flex;
+    flex-direction: row;
+}
+
 .cyberpunk-hero-container {
-    background-image: url("../images/cheng-feng-psdV2Rl-GvU-unsplash_1.webp") no-repeat center center / cover;
+    background: url("../images/cyberpunk-city-background.jpg") no-repeat center center / cover;
     display: none;
 }
 .fantasy-hero-container {
-    background-image: url("../images/stockvault-blood-mountain-castle276512_1.webp") no-repeat center center / cover;
+    background: url("../images/medieval-fantasy-background.jpg") no-repeat center center / cover;
     width: 100%;
     height: 200px;
     padding: 0;
 }
 .scifi-hero-container {
-    background-image: url("../images/rod-long-rKiXtZPOQ28-unsplash_1.webp") no-repeat center center / cover;
+    background: url("../images/scifi-spaceship-background.jpg") no-repeat center center / cover;
     display: none;
 }
+
 /*Index Page Rules*/ 
 .username-input-display{
     background-color: #777586;
@@ -39,3 +53,73 @@ body {
     gap: 20px;
 }
 
+/*Footer Rules*/
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #777586;
+}
+
+footer p {
+    color: #020735;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a {
+    color: #020735;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*This is a media query that targets medium sized devices like tablets and small laptops
+The following Style Rules give the content more space and realigns it to be more pleasing for screens above 768px*/
+@media only screen and (min-width: 768px) {
+    .fantasy-hero-container {
+        background: url("../images/medieval-fantasy-background.jpg") no-repeat center center / cover;
+        width: 50%;
+        height: 200px;
+        padding: 0;
+    }
+    .scifi-hero-container {
+        background: url("../images/scifi-spaceship-background.jpg") no-repeat center center / cover;
+        display: block;
+        width: 50%;
+        height: 200px;
+        padding: 0;
+    }
+
+}
+
+/*This is a media query that targets larger device screen sizes (laptop and desktop) 
+The following Style Rules give the content more space and realigns it to be more pleasing for screens above 768px*/
+@media only screen and (min-width: 1200px) {
+    .cyberpunk-hero-container {
+        background: url("../images/cyberpunk-city-background.jpg") no-repeat center center / cover;
+        display: block;
+        width: 33.333%;
+        height: 200px;
+        padding: 0;
+    }
+    .fantasy-hero-container {
+        background: url("../images/medieval-fantasy-background.jpg") no-repeat center center / cover;
+        width: 33.333%;
+        height: 200px;
+        padding: 0;
+    }
+    .scifi-hero-container {
+        background: url("../images/scifi-spaceship-background.jpg") no-repeat center center / cover;
+        display: block;
+        width: 33.333%;
+        height: 200px;
+        padding: 0;
+    }
+
+}
