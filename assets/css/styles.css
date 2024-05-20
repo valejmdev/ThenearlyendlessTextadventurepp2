@@ -124,6 +124,10 @@ legend {
     margin: 5px;
 }
 
+.label-theme-background{
+    background-color: #ABA9BB;
+}
+
 /*Game Page style Rules*/
 .game-headline{
     text-align: center;
