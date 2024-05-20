@@ -146,6 +146,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 });
+
+let resetButton = document.getElementById('start-new-button');
+console.log(resetButton.value);
+resetButton.addEventListener('click', resetGame);
+
 function resetGame() {
     sessionStorage.clear();
     window.location.href = 'index.html';
