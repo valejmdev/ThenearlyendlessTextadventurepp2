@@ -8,6 +8,7 @@ This website has been created as the second Portfolio project for Code Institute
 - The API has a limit of 30 Requests per Minute, 14.400 Requests per Day with 30.000 Tokens per Minute.
 - If you ever seem to encounter any catch error or the website loading for more than 30 seconds, please be patient, as the tokens and requests mentioned above may be in use already
 - Should the Game stop working entirely even after waiting for at least 20 hours, please contact me, as the API Key has to be exchanged for a new one
+- Due to time restrictions, i was not able to resize some of the mobile Screenshots i took with my own phone. This may lead to very big screenshots that take a big part of the page.
 
 ## The (nearly) endless Textadventure
 
@@ -423,13 +424,13 @@ Further Information on how to deploy the project on VS Code and even more can be
 
 #### Media:
 - [Hugging Face Image Generator](https://huggingface.co/spaces/google/sdxl) - For the beautiful images on my page, created with personally created prompts.
-- [Short Pixel](https://shortpixel.com) - To resize all images I have and used on this website.
+- [Short Pixel](https://shortpixel.com) - To resize all images I have used this website.
 - [GetBootstrap Blog](https://getbootstrap.com/docs/5.0/layout/breakpoints/) - For the information about appropriate breakpoints for responsive design.
 - [MyColor Space](https://mycolor.space/?hex=%23020735&sub=1) - For color palette creation and orientation.
 
 #### Code:
-- [GeeksforGeeks Footer Display Issue Fix by "position: fixed;"](https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/) - Helping me with my display issue of the footer being in the middle of the page instead of the bottom.
-- [Mega-Barrel Text-Adventure](https://github.com/Mega-Barrel/Javascript-Text-Adventure-Game) - For inspiring how to create appropriate storage systems for the story and other input variables.
+- [GeeksforGeeks Footer Display Issue Fix by "position: fixed;"](https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/) - helped me with my display issue of the footer being in the middle of the page instead of at the bottom of the page.
+- [Mega-Barrel Text-Adventure](https://github.com/Mega-Barrel/Javascript-Text-Adventure-Game) - For inspiring me how to create appropriate storage systems for the story and other input variables.
 
 #### W3Schools:
 - [How to Redirect to Another Webpage](https://www.w3schools.com/howto/howto_js_redirect_webpage.asp) - Learn how to redirect to another webpage using JavaScript.
@@ -442,7 +443,7 @@ Further Information on how to deploy the project on VS Code and even more can be
 #### StackOverflow:
 - [How to Dynamically Load Content into DIV Using JavaScript](https://stackoverflow.com/questions/45030059/how-to-dynamically-load-content-into-div-using-javascript) - Learn how to dynamically load content into a DIV using JavaScript for my story's text to be updated.
 - [How to Use sessionStorage for a Webpage for a Login User](https://stackoverflow.com/questions/52697055/how-to-use-sessionstorage-for-a-webpage-for-a-login-user) - Learn how to use sessionStorage for a webpage to store username and use it later on.
-- [How to Display JavaScript Variable Value on HTML Page](https://stackoverflow.com/questions/60576383/display-javascript-variable-value-on-html-page) - Learn how to use the stored username and theme to be displayed and not only used by the narrator.
+- [How to Display JavaScript Variable Value on HTML Page](https://stackoverflow.com/questions/60576383/display-javascript-variable-value-on-html-page) - Learn how to use the stored username and theme to be displayed and not only used by the AI narrator.
 - [How to Submit Form After Calling e.preventDefault()](https://stackoverflow.com/questions/22363838/submit-form-after-calling-e-preventdefault) - Learn how to submit a form that has been stopped by `preventDefault();`.
 - [How to Avoid SDK and Use Raw Fetch with Groq API](https://stackoverflow.com/questions/78391185/how-do-i-avoid-sdk-and-use-raw-fetch-with-groq-api) - Learn how to implement the Groq AI API and how to use prompts and store its response, as well as send new prompts dynamically.
 - [How to Combine Pattern with Maxlength of Input Field](https://stackoverflow.com/questions/11264954/combine-pattern-with-maxlength-of-input-field) - Learn how to combine pattern with maxlength of input field to validate my username input and restrict too long names that could destroy my current CSS display rules.
