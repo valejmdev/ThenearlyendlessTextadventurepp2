@@ -50,9 +50,11 @@ header {
     height: 70vh;
     justify-content: space-around;
 }
+
 .username-intro{
     background-color: #ABA9BB;
 }
+
 #username-form {
     background-color: #ABA9BB;
     width: 320px;
@@ -69,9 +71,11 @@ header {
     flex-direction: column;
     align-items: center;
 }
+
 .username-label-space{
     margin-bottom: 15px;
 }
+
 legend {
     font-size: large;
     font-weight: 500;
@@ -120,6 +124,7 @@ legend {
 .game-headline{
     text-align: center;
 }
+
 .game-display-page {
     display: flex;
     flex-direction: column;
@@ -151,10 +156,12 @@ legend {
     background-color: aliceblue;
     padding: 10px;
 }
+
 #start-new-button{
     margin: 30px 10px 50px 10px;
     height: 50px;
 }
+
 .start-new-button-align{
     display: flex;
     flex-direction: column;
@@ -226,6 +233,7 @@ The following Style Rules give the content more space and realigns it to be more
         height: 200px;
         padding: 0;
     }
+
     .theme-allign {
         display:flex;
         justify-content: center;
@@ -233,23 +241,33 @@ The following Style Rules give the content more space and realigns it to be more
         width: 100%;
         height: 50vh;
     }
+
     .game-display-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .side-bar{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
-    .side-bar{
-        display: flex;
-        flex-direction: column;
-        width: 180px;
-        justify-content: flex-start;
         align-items: center;
     }
+
     .option-align {
         display: grid;
         grid-template-columns: repeat(2, auto);
         margin-top: 25px;
         gap: 20px;
+    }
+
+    .username-display-space{
+        margin-right: 50px;
+    }
+    
+    .theme-display-space{
+        margin-left: 50px;
     }
 }
 
