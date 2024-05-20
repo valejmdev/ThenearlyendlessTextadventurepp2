@@ -140,6 +140,15 @@ legend {
     background-color: aliceblue;
     padding: 10px;
 }
+#start-new-button{
+    margin: 30px 10px 50px 10px;
+    height: 50px;
+}
+.start-new-button-align{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*Endgame page style Rules*/
 .thank-display-page{
@@ -160,11 +169,6 @@ legend {
     padding: 10px;
     font-weight: bold;
     font-size: large;
-}
-
-#start-new-button{
-    margin: 30px 10px 0 10px;
-    height: 50px;
 }
 
 /*Footer style Rules*/

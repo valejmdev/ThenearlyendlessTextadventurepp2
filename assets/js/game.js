@@ -146,3 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
 });
+function resetGame() {
+    sessionStorage.clear();
+    window.location.href = 'index.html';
+}
