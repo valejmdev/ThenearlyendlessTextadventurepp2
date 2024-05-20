@@ -3,6 +3,7 @@
 	1. [General Testing](#General-Testing)
 	2. [Mobile Testing](#Mobile-Testing)
 	3. [Desktop Testing](#Desktop-Testing)
+	5. [Manual Testing](#Manual-Testing)
 	4. [Functionality](#Functionality)
  	5. [Website Development Issues](#Website-Development-Issues)
  	6. [Bugs](#Bugs)
@@ -12,7 +13,6 @@
         2. [W3C Jigsaw](#W3C-Jigsaw)
         3. [JavaScript](#JavaScript)
  	9. [Accessibility](#Accessibility)
- 	10. [Deployment](#Deployment)
 ***
 ### General Testing
 -   Each feature was developed on the main branch. 
@@ -59,6 +59,13 @@
 -   The site was marginally tested on other browsers, such as Firefox and Opera.
 -   Internet Explorer was not tested and the site was not developed with it in mind as support for the browser is gradually 		being dropped.
 ***
+
+### Manual Testing
+- As mentioned int the Testing Parts above i have tried every possible theme and all options buttons
+- I have reseted the game with the reset button in any part and any theme of the game, ensuring that it works
+- I have provided screenshots to the **Features** Part of this Readme.
+- Due to very high replayability it is not possible to create screenshots for all possible Game scenarios.
+
 ### Functionality
 -   All links have been hovered and clicked to ensure accessibility.
 -   Pages all load correctly on all device screen sizes.
@@ -100,10 +107,10 @@ This table summarizes the issues encountered, their current status, and any acti
 
 | Issue                                                          | Status                                        |
 |----------------------------------------------------------------|-----------------------------------------------|
-|                                                       | ✅  |
-|                              | ✅  |
-|            | ✅  |
-|     | ❌  |
+|Update Story function did not initialise the first story part | ✅ I fixed by seperating JavaScript in different pages |
+|Display Issue of footer being displayed in the middle of the screen  | ✅ I gave the footer position fixed and margin top|
+|Display Issue of Theme Selector page  | ✅ Add flexbox system with a lot of margin and padding |
+|Catch error described and screenshot provided in following JavaScript Part  | ❌ Not able to find definite cause, as it could be connection issue, API Loading times or other factors. Due to time restriction and no impact on functionality, i will fix this in the future. |
 
 ***
 ## Validation: 
@@ -112,39 +119,50 @@ I used the [W3C HTML Validator](https://validator.w3.org/nu/)
 
 | Pages    | Screenshot                                    |
 |----------|-----------------------------------------------|
-| Username     | ![W3C HTML Validation Index](../readmescreenshots/) |
-| Theme  | ![W3C HTML Validation Theme](../readmescreenshots/) |
-| Game  | ![W3C HTML Validation Game](../readmescreenshots/) |
-| Engame 	   | ![W3C HTML Validation Endgame](../readmescreenshots/) |
+| Username     | ![W3C HTML Validation Index](../readmescreenshots/w3chtmlvalidationindex.png) |
+| Theme  | ![W3C HTML Validation Theme](../readmescreenshots/w3chtmlvalidationtheme.png) |
+| Game  | ![W3C HTML Validation Game](../readmescreenshots/w3chtmlvalidationgame.png) |
+| Engame 	   | ![W3C HTML Validation Endgame](../readmescreenshots/w3chtmlvalidationendgame.png) |
 
 ### W3C Jigsaw: 
 I used the [W3C CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
-![W3C CSS Validation Jigsaw](../readmescreenshots/w3cjigsawvalidatorcss.png)
+![W3C CSS Validation Jigsaw](../readmescreenshots/w3ccssvalidation.png)
 
 ### JavaScript
-I used the []()
+- I used the [JSHint JavaScript Validator](https://jshint.com/)
+- I added the /**jshint esversion: 11**/ to validate my code, as i used functions up to that version.
 
+- There were no errors with any of my JavaScript Pages, while checking with JSHint.
+
+- I received one warning, which asked me to create my function **updateStory** outside the loop, but due to time restrictions, i am not able to rewrite the code to do so. This warning only considers this to be confusing to read for a third party, not critical to any functionality.
+***
+
+![JSHint Warning](../readmescreenshots/jshintonlyerror.png)
+***
+- I also sometimes receive error messages inside the console, that are explaining, that the **fetch** method, was not able to create the text it receives, due to a format issue. 
+- This error is not breaking the code and is being console logged in a **catch** method.
+![Console Error Catch](../readmescreenshots/fetcherrornotbreaking.png)
 ***
 ## Accessibility: 
 I used the Chrome Lighthouse tool and received different scores for different pages and devices.
 | Environment         | Page   | Screenshot                                    |
 |---------------------|--------|-----------------------------------------------|
-| Local Host Mobile   | Username   | ![Local Host Mobile Username](../readmescreenshots/)     |
-| Local Host Mobile   | Theme| ![Local Host Mobile Theme](../readmescreenshots/) |
-| Local Host Mobile   | Game| ![Local Host Mobile Game](../readmescreenshots/) |
-| Local Host Mobile   | Endgame| ![Local Host Mobile Endgame](../readmescreenshots/) |
-| Local Host Desktop  | Username   | ![Local Host Desktop Username](../readmescreenshots/)     |
-| Local Host Desktop  | Theme| ![Local Host Desktop Theme](../readmescreenshots/) |
-| Local Host Desktop  | Game| ![Local Host Desktop Game](../readmescreenshots/) |
-| Local Host Desktop  | Endgame| ![Local Host Desktop Endgame](../readmescreenshots/) |
-| Github Pages Mobile | Username   | ![Github Pages Mobile Username](../readmescreenshots/) |
-| Github Pages Mobile | Theme| ![Github Pages Mobile Theme](../readmescreenshots/) |
-| Github Pages Mobile | Game| ![Github Pages Mobile Game](../readmescreenshots/) |
-| Github Pages Mobile | Endgame| ![Github Pages Mobile Endgame](../readmescreenshots/) |
-| Github Pages Desktop| Username   | ![Github Pages Desktop Username](../readmescreenshots/) |
-| Github Pages Desktop| Theme| ![Github Pages Desktop Theme](../readmescreenshots/) |
-| Github Pages Desktop| Game| ![Github Pages Desktop Game](../readmescreenshots/) |
-| Github Pages Desktop| Endgame| ![Github Pages Desktop Endgame](../readmescreenshots/) |
+| Local Host Mobile   | Username   | ![Local Host Mobile Username](../readmescreenshots/lighthouselocalhostindexmobile.png)     |
+| Local Host Mobile   | Theme| ![Local Host Mobile Theme](../readmescreenshots/lighthouselocalhostthememobile.png) |
+| Local Host Mobile   | Game| ![Local Host Mobile Game](../readmescreenshots/lighthouselocalhostgamemobile.png) |
+| Local Host Mobile   | Endgame| ![Local Host Mobile Endgame](../readmescreenshots/lighthouselocalhostendgamemobile.png) |
+| Local Host Desktop  | Username   | ![Local Host Desktop Username](../readmescreenshots/lighthouselocalhostindexdesktop.png)     |
+| Local Host Desktop  | Theme| ![Local Host Desktop Theme](../readmescreenshots/lighthouselocalhostthemedesktop.png) |
+| Local Host Desktop  | Game| ![Local Host Desktop Game](../readmescreenshots/lighthouselocalhostgamedesktop.png) |
+| Local Host Desktop  | Endgame| ![Local Host Desktop Endgame](../readmescreenshots/lighthouselocalhostendgamedesktop.png) |
+| Github Pages Mobile | Username   | ![Github Pages Mobile Username](../readmescreenshots/lighthousegithubpagesindexmobile.png) |
+| Github Pages Mobile | Theme| ![Github Pages Mobile Theme](../readmescreenshots/lighthousegithubpagesthememobile.png) |
+| Github Pages Mobile | Game| ![Github Pages Mobile Game](../readmescreenshots/lighthousegithubpagesgamemobile.png) |
+| Github Pages Mobile | Endgame| ![Github Pages Mobile Endgame](../readmescreenshots/lighthousegithubpagesendgamemobile.png) |
+| Github Pages Desktop| Username   | ![Github Pages Desktop Username](../readmescreenshots/lighthousegithubpagesindexdesktop.PNG) |
+| Github Pages Desktop| Theme| ![Github Pages Desktop Theme](../readmescreenshots/lighthousegithubpagesthemedesktop.png) |
+| Github Pages Desktop| Game| ![Github Pages Desktop Game](../readmescreenshots/lighthousegithubpagesgamedesktop.png) |
+| Github Pages Desktop| Endgame| ![Github Pages Desktop Endgame](../readmescreenshots/lighthousegithubpagesendgamedesktop.png) |
 
 
 [Back to the top](#Testing)
