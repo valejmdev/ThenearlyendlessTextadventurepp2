@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 // Function to clear sessionStorage and redirect to index.html
 let resetButton = document.getElementById('start-new-button');
-console.log(resetButton.value);
 resetButton.addEventListener('click', resetGame);
 
 function resetGame() {
