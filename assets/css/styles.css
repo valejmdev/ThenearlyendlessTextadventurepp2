@@ -50,10 +50,12 @@ header {
     height: 70vh;
     justify-content: space-around;
 }
-
-.username-input-display {
+.username-intro{
     background-color: #ABA9BB;
-    width: 100%;
+}
+#username-form {
+    background-color: #ABA9BB;
+    width: 320px;
     min-height: 300px;
     display: flex;
     flex-direction: column;
@@ -63,8 +65,13 @@ header {
 
 .username-input-space {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
+.username-label-space{
+    margin-bottom: 15px;
+}
 legend {
     font-size: large;
     font-weight: 500;
@@ -73,6 +80,7 @@ legend {
 #start-box-div {
     background-color: #ABA9BB;
     border: 1px solid black;
+    margin: 30px;
     padding: 5px;
     height: 50px;
     width: 100px;
@@ -240,7 +248,6 @@ The following Style Rules give the content more space and realigns it to be more
         margin-top: 25px;
         gap: 20px;
     }
-    
 }
 
 /*This is a media query that targets larger device screen sizes (laptop and desktop) 
