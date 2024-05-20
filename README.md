@@ -416,59 +416,50 @@ The live link can be found here:  [The nearly Endless Textadventure](https://val
 Further Information on how to deploy the project on VS Code and even more can be found [here](https://github.com/MicrosoftDocs/visualstudio-docs/blob/main/docs/get-started/tutorial-open-project-from-repo.md)!
 ***
 
+### Credits
 
-## Credits 
-### Content: 
-- [Groq AI API for Llama3-8b-8192](https://console.groq.com/keys) The AI that creates an awesome story, offers you new options to choose from and even writing an happy End based on all your Choices.
+#### Content:
+- [Groq AI API for Llama3-8b-8192](https://console.groq.com/keys) - The AI that creates an awesome story, offers you new options to choose from, and even writes a happy end based on all your choices.
 
-### Media: 
-- [huggingface image generator](https://huggingface.co/spaces/google/sdxl) for the beautiful images on my page, created with personaly created prompts
+#### Media:
+- [Hugging Face Image Generator](https://huggingface.co/spaces/google/sdxl) - For the beautiful images on my page, created with personally created prompts.
+- [Short Pixel](https://shortpixel.com) - To resize all images I have and used on this website.
+- [GetBootstrap Blog](https://getbootstrap.com/docs/5.0/layout/breakpoints/) - For the information about appropriate breakpoints for responsive design.
+- [MyColor Space](https://mycolor.space/?hex=%23020735&sub=1) - For color palette creation and orientation.
 
-- [short pixel](https://shortpixel.com) to resize all images i have and used on this website.
+#### Code:
+- [GeeksforGeeks Footer Display Issue Fix by "position: fixed;"](https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/) - Helping me with my display issue of the footer being in the middle of the page instead of the bottom.
+- [Mega-Barrel Text-Adventure](https://github.com/Mega-Barrel/Javascript-Text-Adventure-Game) - For inspiring how to create appropriate storage systems for the story and other input variables.
 
-- [getbootstrap blog](https://getbootstrap.com/docs/5.0/layout/breakpoints/) for the information about appropriate breakpoints for responsive design
+#### W3Schools:
+- [How to Redirect to Another Webpage](https://www.w3schools.com/howto/howto_js_redirect_webpage.asp) - Learn how to redirect to another webpage using JavaScript.
+- [HTML DOM Element addEventListener](https://www.w3schools.com/jsref/met_element_addeventlistener.asp) - Learn how to use HTML DOM Element addEventListener() in JavaScript.
+- [JavaScript Fetch API](https://www.w3schools.com/jsref/api_fetch.asp) - Learn how to use JavaScript Fetch API used for the Groq AI API Implementation.
+- [HTML Forms](https://www.w3schools.com/html/html_forms.asp) - Learn more about the different elements in a Form Element and how to use them properly.
+- [CSS Grid Layout Module](https://www.w3schools.com/css/css_grid.asp) - Learn how to use the CSS Grid Layout to align my option buttons.
+- [Using HTML `<select>` Form Attribute](https://www.w3schools.com/tags/att_select_form.asp) - Learn how to utilize the select element to create a storable theme selector.
 
-- [mycolor space ](https://mycolor.space/?hex=%23020735&sub=1) for color palette creation and orientation
+#### StackOverflow:
+- [How to Dynamically Load Content into DIV Using JavaScript](https://stackoverflow.com/questions/45030059/how-to-dynamically-load-content-into-div-using-javascript) - Learn how to dynamically load content into a DIV using JavaScript for my story's text to be updated.
+- [How to Use sessionStorage for a Webpage for a Login User](https://stackoverflow.com/questions/52697055/how-to-use-sessionstorage-for-a-webpage-for-a-login-user) - Learn how to use sessionStorage for a webpage to store username and use it later on.
+- [How to Display JavaScript Variable Value on HTML Page](https://stackoverflow.com/questions/60576383/display-javascript-variable-value-on-html-page) - Learn how to use the stored username and theme to be displayed and not only used by the narrator.
+- [How to Submit Form After Calling e.preventDefault()](https://stackoverflow.com/questions/22363838/submit-form-after-calling-e-preventdefault) - Learn how to submit a form that has been stopped by `preventDefault();`.
+- [How to Avoid SDK and Use Raw Fetch with Groq API](https://stackoverflow.com/questions/78391185/how-do-i-avoid-sdk-and-use-raw-fetch-with-groq-api) - Learn how to implement the Groq AI API and how to use prompts and store its response, as well as send new prompts dynamically.
+- [How to Combine Pattern with Maxlength of Input Field](https://stackoverflow.com/questions/11264954/combine-pattern-with-maxlength-of-input-field) - Learn how to combine pattern with maxlength of input field to validate my username input and restrict too long names that could destroy my current CSS display rules.
 
-### Code: 
+#### MDN:
+- [All About XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) - Learn about XMLHttpRequests until I found out I have to use the fetch(); method.
+- [Using the Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) - Learn how to use the Fetch API and all the elements that go into it.
+- [All About Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) - Learn all about Promise-based requests to implement a functional Groq AI API.
+- [All About Element](https://developer.mozilla.org/en-US/docs/Web/API/Element) - Learn all about different methods that are able to be used via an element.
 
-- [Geeksforgeeks footer display issue fixby "position: fixed;"](https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/) Helping me with my display issue of the footer being in the middle of the page, instead of the bottom of the page. 
-- [Mega-Barrel Text-Adventure](https://github.com/Mega-Barrel/Javascript-Text-Adventure-Game) for inspiring how to create appropriate storage systems for the story and other input variables
-
-#### W3Schools: 
--  [W3 Schools How to Redirect to Another Webpage](https://www.w3schools.com/howto/howto_js_redirect_webpage.asp) Learn how to redirect to another webpage using JavaScript.
--  [W3 Schools HTML DOM Element addEventListener()](https://www.w3schools.com/jsref/met_element_addeventlistener.asp) Learn how use HTML DOM Element addEventListener() in JavaScript.
--  [W3 Schools JavaScript Fetch API](https://www.w3schools.com/jsref/api_fetch.asp) Learn how to use JavaScript Fetch API used for the Groq AI API Implementation.
--  [W3 Schools HTML Formse](https://www.w3schools.com/html/html_forms.asp) Learn how more about the different elements in a Form Element and how to use them properly.
--  [W3 Schools CSS Grid Layout Module](https://www.w3schools.com/css/css_grid.asp) Learn how to use the CSS Grid Layout to alling my Option Buttons.
--  [W3 Schools How use HTML <select> form Attribute](https://www.w3schools.com/tags/att_select_form.asp) Learn how to utilize the select Element to create a storable theme selector.
-
-#### Stackoverflow: 
--  [Stackoverflow How to dynamically load content into DIV using Javascript](https://stackoverflow.com/questions/45030059/how-to-dynamically-load-content-into-div-using-javascript) Learn how to dynamically load content into DIV using Javascript for my Story's text to be updated.
--  [Stackoverflow How to use sessionStorage for a webpage for a login user](https://stackoverflow.com/questions/52697055/how-to-use-sessionstorage-for-a-webpage-for-a-login-user) Learn how to use sessionStorage for a webpage to stora username and use it later on.
--  [Stackoverflow How to dynamically load content into DIV using Javascript](https://stackoverflow.com/questions/60576383/display-javascript-variable-value-on-html-page) Learn how to use sessionStorage for a webpage to stora username and use it later on.
--  [Stackoverflow How to display javaScript variable value on HTML page](https://stackoverflow.com/questions/45030059/how-to-dynamically-load-content-into-div-using-javascript) Learn how to use the stored username and theme to be displayed and not only used by the narrator.
--  [Stackoverflow How to Submit form after calling e.preventDefault()](https://stackoverflow.com/questions/22363838/submit-form-after-calling-e-preventdefault) Learn how to submit a Form, that has been stopped by "preventDefault();".
--  [Stackoverflow How to avoid SDK and use raw fetch with Groq API?](https://stackoverflow.com/questions/78391185/how-do-i-avoid-sdk-and-use-raw-fetch-with-groq-api) Learn how to implement the Groq AI API and how to use prompts and store its response, aswell send new prompts dynamiclly. 
--  [Stackoverflow How to Combine pattern with maxlength of input field](https://stackoverflow.com/questions/11264954/combine-pattern-with-maxlength-of-input-field) Learn how to Combine pattern with maxlength of input field to validate my username input and restrict too long names that could destroy my current CSS display rules.
-
-#### MDN: 
--  [MDN All about XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) Learn about XMLHttpRequests until i found out i have to use the fetch(); method.
--  [MDN Using the Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) Learn how to use the Fetch API and all the elements that go into it.
--  [MDN All about Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) Learn all about Promise based requests to implement a functional Groq AI API.
--  [MDN All about Element](https://developer.mozilla.org/en-US/docs/Web/API/Element) Learn all about different methods that are able to be used via an element.
-
-
-## Acknowledgements: 
-- A very special thanks to Pascal the most helpful person i ever met.  He has helped me tremendously with ideas, fixes and feedback.
-
+### Acknowledgements:
+- A very special thanks to Pascal, the most helpful person I ever met. He has helped me tremendously with ideas, fixes, and feedback.
 - I also want to thank my Mentor Rory-Patrick who gave me so many tips and tricks, and inspired me along the way.
-
-- Also very special thanks to my dog who provided emotional support and times to unwind.
-
+- Also, very special thanks to my dog who provided emotional support and times to unwind.
 - I thank all my peers in my course, who provided a lot of support and feedback!
-
 - I thank all my family members and friends who not only gave feedback and support but also tested it on their devices.
+
 > Written with [StackEdit](https://stackedit.io/).
 
 [Back to the top](#UX)
