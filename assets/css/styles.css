@@ -115,6 +115,10 @@ legend {
     justify-content: space-evenly;
 }
 
+.touch-space{
+    margin-bottom: 50px;
+}
+
 .rules-box{
     width: 300px;
     margin: 5px;
