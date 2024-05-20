@@ -117,6 +117,9 @@ legend {
 }
 
 /*Game Page style Rules*/
+.game-headline{
+    text-align: center;
+}
 .game-display-page {
     display: flex;
     flex-direction: column;
