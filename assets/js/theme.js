@@ -10,9 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         themeForm.addEventListener('submit', function (event) {
             event.preventDefault();
             let themeSelection = document.getElementById('theme');
-            console.log(themeSelection);
             let themeValue = themeSelection.value;
-            console.log(themeValue);
             sessionStorage.setItem('theme', themeValue);
             themeForm.submit();
         });
