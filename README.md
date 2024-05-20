@@ -8,7 +8,6 @@ This website has been created as the second Portfolio project for Code Institute
 - The API has a limit of 30 Requests per Minute, 14.400 Requests per Day with 30.000 Tokens per Minute.
 - If you ever seem to encounter any catch error or the website loading for more than 30 seconds, please be patient, as the tokens and requests mentioned above may be in use already
 - Should the Game stop working entirely even after waiting for at least 20 hours, please contact me, as the API Key has to be exchanged for a new one
-- Due to time restrictions, i was not able to resize some of the mobile Screenshots i took with my own phone. This may lead to very big screenshots that take a big part of the page.
 
 ## The (nearly) endless Textadventure
 
