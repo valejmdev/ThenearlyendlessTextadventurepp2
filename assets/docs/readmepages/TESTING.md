@@ -92,7 +92,7 @@ For the purpose of this project, the following technologies were used.
 - **Stackedit** was used to write the README files
 - **Am I Responsive** was used to check that each page of the site was responsive. It was also used to create the mock-up image seen at the beginning of this document.
 - **Google Development Tools** were used to edit code and check responsiveness before making the changes permanent.
-- **Groq AI API** was implemented to give the game a greater replayability and the documentation made it easy to implement.
+
 ***
 ## Bugs
 
@@ -146,40 +146,5 @@ I used the Chrome Lighthouse tool and received different scores for different pa
 | Github Pages Desktop| Game| ![Github Pages Desktop Game](../readmescreenshots/) |
 | Github Pages Desktop| Endgame| ![Github Pages Desktop Endgame](../readmescreenshots/) |
 
-## Deployment: 
-This project was developed using [GitPod](https://gitpod.io/) and [VSCode](https://code.visualstudio.com), committed and pushed to [GitHub](https://github.com/) using a GitPod terminal.
 
--   This site was deployed by completing the following steps:
-
-The steps to activate Github pages are as follows:
-1.   Navigate to the settings tab in the GitHub repository.
-2.   In the settings, navigate to the 'Pages' tab on the left of the page.
-3.   In the 'Build and deployment' section, select 'Deploy from a branch' in the source dropdown.
-4.   Select branch 'main' and click on 'Save'.
-
-The live link can be found here:  [The nearly Endless Textadventure](https://valejmdev.github.io/ThenearlyendlessTextadventurepp2/)
-***
-### Forking This Project
-
--   Fork this project following the steps:
-
-1.  Open  [GitHub](https://github.com/).
-2.  Click on the project to be forked.
-3.  Find the 'Fork' button to the top right of the page.
-4.  Once you click the button the fork will be in your repository..
-***
-### Cloning This Project
--   Clone this project following the steps:
-
-1.  Open  [GitHub](https://github.com/).
-2.  Click on the project to be cloned.
-3.  You will be provided with three options to choose from, HTTPS, SSH or GitHub CLI, click the clipboard icon in order to copy the URL..
-4.  Once you click the button the fork will be in your repository.
-5.  Open a new terminal.
-6.  Change the current working directory to the location that you want the cloned directory.
-7.  Type 'git clone' and paste the URL copied in step 3.
-8.  Press 'Enter' and the project is cloned.
-
-Further Information on how to deploy the project on VS Code and even more can be found [here](https://github.com/MicrosoftDocs/visualstudio-docs/blob/main/docs/get-started/tutorial-open-project-from-repo.md)!
-***
 [Back to the top](#Testing)
