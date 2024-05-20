@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log(themeValue);
             sessionStorage.setItem('theme', themeValue);
             themeForm.submit();
-            updateStory();
         });
     }
 });
