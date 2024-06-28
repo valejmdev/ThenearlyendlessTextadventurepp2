@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
     async function apiCall(username, theme, history, lastChoice, requestHappyEnding) {
 
         //API Key is temporary on purpose, as safe storage has to be discussed
-        const apiKey = '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';
+        const apiKey = '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';
         let prompt;
         let systemMessage;
 
